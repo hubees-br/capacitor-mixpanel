@@ -83,6 +83,7 @@
     }
   },
   "dependencies": {
+    "@houseninja/capacitor-mixpanel": "github:hubees-br/capacitor-mixpanel",
     "mixpanel-browser": "^2.45.0"
   }
 }

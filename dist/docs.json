@@ -7,7 +7,7 @@
     "methods": [
       {
         "name": "initialize",
-        "signature": "(options: InitializeOptions) => any",
+        "signature": "(options: InitializeOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -15,7 +15,7 @@
             "type": "InitializeOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -30,9 +30,9 @@
       },
       {
         "name": "distinctId",
-        "signature": "() => any",
+        "signature": "() => Promise<{ value: string; }>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<{ value: string; }>",
         "tags": [
           {
             "name": "platforms",
@@ -45,7 +45,7 @@
       },
       {
         "name": "track",
-        "signature": "(options: TrackOptions) => any",
+        "signature": "(options: TrackOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -53,7 +53,7 @@
             "type": "TrackOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -68,7 +68,7 @@
       },
       {
         "name": "identify",
-        "signature": "(options: IdentifyOptions) => any",
+        "signature": "(options: IdentifyOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -76,7 +76,7 @@
             "type": "IdentifyOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -91,7 +91,7 @@
       },
       {
         "name": "alias",
-        "signature": "(options: AliasOptions) => any",
+        "signature": "(options: AliasOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -99,7 +99,7 @@
             "type": "AliasOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -114,9 +114,9 @@
       },
       {
         "name": "reset",
-        "signature": "() => any",
+        "signature": "() => Promise<void>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -129,9 +129,9 @@
       },
       {
         "name": "clearSuperProperties",
-        "signature": "() => any",
+        "signature": "() => Promise<void>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -144,9 +144,9 @@
       },
       {
         "name": "currentSuperProperties",
-        "signature": "() => any",
+        "signature": "() => Promise<{ properties: any; }>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<{ properties: any; }>",
         "tags": [
           {
             "name": "platforms",
@@ -159,7 +159,7 @@
       },
       {
         "name": "registerSuperProperties",
-        "signature": "(options: SuperPropertyOptions) => any",
+        "signature": "(options: SuperPropertyOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -167,7 +167,7 @@
             "type": "SuperPropertyOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -182,7 +182,7 @@
       },
       {
         "name": "setProfile",
-        "signature": "(options: ProfileProperties) => any",
+        "signature": "(options: ProfileProperties) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -190,7 +190,7 @@
             "type": "ProfileProperties"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -205,7 +205,7 @@
       },
       {
         "name": "setProfileUnion",
-        "signature": "(options: ProfileProperties) => any",
+        "signature": "(options: ProfileProperties) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -213,7 +213,7 @@
             "type": "ProfileProperties"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -228,9 +228,9 @@
       },
       {
         "name": "deleteProfile",
-        "signature": "() => any",
+        "signature": "() => Promise<void>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -243,7 +243,7 @@
       },
       {
         "name": "trackCharge",
-        "signature": "(options: ChargeOptions) => any",
+        "signature": "(options: ChargeOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -251,7 +251,7 @@
             "type": "ChargeOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -266,9 +266,9 @@
       },
       {
         "name": "flush",
-        "signature": "() => any",
+        "signature": "() => Promise<void>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -281,7 +281,7 @@
       },
       {
         "name": "optInTracking",
-        "signature": "(options: OptInOptions) => any",
+        "signature": "(options: OptInOptions) => Promise<void>",
         "parameters": [
           {
             "name": "options",
@@ -289,7 +289,7 @@
             "type": "OptInOptions"
           }
         ],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -304,9 +304,9 @@
       },
       {
         "name": "optOutTracking",
-        "signature": "() => any",
+        "signature": "() => Promise<void>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<void>",
         "tags": [
           {
             "name": "platforms",
@@ -319,9 +319,9 @@
       },
       {
         "name": "hasOptedOutTracking",
-        "signature": "() => any",
+        "signature": "() => Promise<{ value: boolean; }>",
         "parameters": [],
-        "returns": "any",
+        "returns": "Promise<{ value: boolean; }>",
         "tags": [
           {
             "name": "platforms",
